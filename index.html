@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureUtil</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>Util</h1>
+    <!--
+        NroBol:
+        Severidad:
+        CVE:
+        Intro:
+        Tecnico:
+        IOC
+        IP
+        URl
+        Domain
+        Hash
+        Recomed:
+        Fuentes:
+        (algunas pablras tecnicas se cambian a ingles)
+        (no usar actor de amanezas, carga de archivo)
+
+    -->
+    <fieldset>
+        <legend>UpperCase</legend>
+        <textarea id='textConvertUpperCase' wrap='off'
+        onkeyup="pressKeyUpperCase(event);"
+        ></textarea>
+        <textarea id='textUpperCase'  ></textarea>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>
+            <strong>URL Ofuscate</strong>
+        </legend>
+        <textarea  id="txtAreaOfuscate" came="" cols="70" rows="10" onkeyup="pressKeyOfuscate(event);" ></textarea>
+        <textarea id="txtAreaCustomIOCOfuscate" name="" cols="70" rows="10"></textarea>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>
+            <strong>URL Clarify</strong>
+        </legend>
+
+        <textarea   id="txtAreaIOCClarify"  cols="70" rows="10" onkeyup="pressKeyClarify(event);" ></textarea>
+        <textarea id="txtAreaCustomIOCClarify" cols="70" rows="10"></textarea>
+
+    </fieldset>
+
+   <br>    
+
+    <fieldset>  
+        <legend>
+            <strong>
+                Filter
+            </strong>
+        </legend>
+        <textarea   id="txtWordFilter" came="" cols="20" rows="1" onkeyup="pressKeyResultFilter(event);" ></textarea>
+        <label for="">Count MD5: </label>
+        <textarea   id="txtResultCountMD5" cols="10" rows="1" readonly></textarea>
+        <label for="">Count SHA256: </label>
+        <textarea   id="txtResultCountSHA256" cols="10" rows="1" readonly></textarea>
+        <label for="">Count CUSTOM: </label>
+        <textarea   id="txtResultCountCUSTOM" cols="10" rows="1" readonly></textarea>
+
+    </fieldset>
+
+
+    <br>
+
+    <textarea   id="txtTextFilter" came="" cols="55" rows="10"  ></textarea>
+    <textarea id="txtMD5ResultFilterText" name="" cols="45" rows="10"></textarea>
+    <textarea id="txtSHA256ResultFilterText" name="" cols="45" rows="10"></textarea>
+    <textarea id="txtResultFilterText" name="" cols="45" rows="5"></textarea>
+
+    <br><br>
+    <ul>
+        <li><a href="https://www.browserling.com/tools/filter-lines">Filter Lines</a></li>
+        <li><a href="https://convertcase.net/">UpperCase</a></li>
+        <li><a href="https://pinetools.com/es/eliminar-lineas-vacias">Eliminar Lineas Vacias</a></li>
+        <li><a href="https://pinetools.com/es/remover-lineas-duplicadas">Remover lineas Duplicadas</a></li>
+    </ul>
+    <p>
+    <textarea name="" id="lineCounter" wrap="off" readonly></textarea><textarea name="" id="codeEditor" cols="30" rows="10"></textarea>
+    </p>
+    <!-- 
+    <p><textarea id='lineCounter' wrap='off' readonly>1.</textarea><textarea id='codeEditor' wrap='off'></textarea></p>
+    -->
+    <script src="./index.js"></script>
+    <!-- creator: evil-h4x -->
+</body>
+</html>
